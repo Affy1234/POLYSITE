@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="category.css">
+        <link rel="stylesheet" href="script.js">
+        <link rel="stylesheet" href="login.html">
+        <link rel="stylesheet" href="sitemap.css">   
+    
+        <style>
+
+            body{
+    font-family: 'Poppins', sans-serif;
+    
+    background-color: #f9f9f9;
+    }
+    
+            .shop-now-button a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+    
+            .row {
+                gap: 1rem;
+            }
+    
+            .cat-name {
+                text-align: center;
+                font-size: 70px;
+                color: #0e6de9;
+                text-shadow:2px 2px 4px #0e6de9 ;
+            }
+    
+            .card-hover {
+                transition: transform 0.2s ease-in-out;
+            }
+    
+            .card-hover:hover {
+                transform: scale(1.05);
+                background-color: #ffffff;
+                
+            }
+    
+            .card-animation {
+                animation: card-load 0.5s ease-in-out;
+            }
+    
+            @keyframes card-load {
+                from {
+                    transform: scale(0);
+                }
+    
+                to {
+                    transform: scale(1);
+                }
+            }
+    
+            .shop-now-button {
+                border-radius: 10px;
+                padding: 10px 20px;
+                background-color: #0e99e9;
+                color: #ffffff;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                position: absolute;
+                justify-self: center;
+                top: 150px;
+            }
+    
+            .shop-now-button:hover {
+                background-color: #0e6de9;
+                transform: translateY(-2px);
+                color: #ffffff;
+            }
+            .card{
+                height: 410px;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+                border: 1px solid lightgray;
+            
+            }
+            .card .card-body{
+                position: relative;
+            }
+            .card-title{
+                color: green;
+            }
+            #cat-drop{
+                
+                margin-left: 80%;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+         <!-- Navbar start -->
+         <nav class="navbar">
+            <div class="logo">Poly<span>Site</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="category.html">Shop Now</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="FAQ queiries.html">Queries</a></li>
+            </ul>
+    
+           
+    
+                <!-- Login/Sign Up -->
+                <button class="login-button" onclick="location.href='login.html'">
+                    <span class="login-icon"></span>
+                    <span class="login-text">Login / Sign Up</span>
+                </button>
+            </div>
+    
+            <!-- Hamburger Menu -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+        <!-- Navbar end-->
+          <!-- category dropdown -->
+     <div class="dropdown mt-5" id="cat-drop">
+        <button
+          class="btn btn-outline-primary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+        <i class="bi bi-funnel-fill"></i>  Categories
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="cat-caps.html">Caps & Enclosures</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="category.html">All Products</a></li>
+          <li><a class="dropdown-item" href="cat-bottles.html">Bottles</a></li>
+          <li><a class="dropdown-item" href="cat-storage.html"></a>Storage Bottles</li>
+        </ul>
+        
+      </div>
+<!-- category dropdown end -->
+<div class="container mt-5">
+    <div class="row">
+        <div>
+            <h1 class="cat-name" data-aos="zoom-in-up">CAPS & ENCLOSURES</h1>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card card-hover card-animation">
+                <img src="assets-b/Caps-n-enclosures/cap-1/img-1.jpg" class="card-img-top"
+                    alt="Shopping Cart">
+                <div class="card-body">
+                    <h5 class="card-title">$2.99
+                    </h5>
+                    <p class="card-text">38-IPEC Snap Screw Cap with Tamper Evident Ring - Bag of 25
+                    </p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="shop-now-button"> <a
+                                href="product-cap.html">Shop Now</a> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card card-hover card-animation">
+                <img src="assets-b/Caps-n-enclosures/cap-2/img-1.jpg" class="card-img-top"
+                    alt="Shopping Cart">
+                <div class="card-body">
+                    <h5 class="card-title">$5.99
+                    </h5>
+                    <p class="card-text">38-400 Flip Top Cap with Pressure Sensitive Liner - 7.62mm Round Orifice
+                    </p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="shop-now-button"> <a
+                                href="product-cap2.html">Shop Now</a> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card card-hover card-animation">
+                <img src="assets-b/Caps-n-enclosures/cap-3/img-1.jpg" class="card-img-top"
+                    alt="Shopping Cart">
+                <div class="card-body">
+                    <h5 class="card-title">$4.99
+                    </h5>
+                    <p class="card-text">38-400 Flat Top Cap with Pressure Sensitive Liner - Bag of 25
+                    </p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="shop-now-button"> <a
+                                href="product-cap3.html">Shop Now</a> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card card-hover card-animation">
+                <img src="assets-b/Caps-n-enclosures/cap-4/img-1.jpg" class="card-img-top"
+                    alt="Shopping Cart">
+                <div class="card-body">
+                    <h5 class="card-title">$4.99
+                    </h5>
+                    <p class="card-text">38-400 Yellow Liquiflapper Flip Cap with Teardrop Orifice - F217 Liner
+                    </p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="shop-now-button"> <a
+                                href="product-cap4.html">Shop Now</a> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card card-hover card-animation">
+                <img src="assets-b/Caps-n-enclosures/cap-5/img-1.jpg" class="card-img-top"
+                    alt="Shopping Cart">
+                <div class="card-body">
+                    <h5 class="card-title">$3.99
+                    </h5>
+                    <p class="card-text">38-400 White Flat Top Cap with PX11 Induction Seal Liner for PET Bottles
+                    </p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="shop-now-button"> <a
+                                href="product-cap5.html">Shop Now</a> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card card-hover card-animation">
+                <img src="assets-b/Caps-n-enclosures/cap-6/img-1.jpg" class="card-img-top"
+                    alt="Shopping Cart">
+                <div class="card-body">
+                    <h5 class="card-title">$4.99
+                    </h5>
+                    <p class="card-text">38-400 Black Flip & Sift Spice Cap with Pressure Sensitive Liner - Bag of 25
+                    </p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="shop-now-button"> <a
+                                href="product-cap6.html">Shop Now</a> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card card-hover card-animation">
+                <img src="assets-b/Caps-n-enclosures/cap-7/img-2.jpg" class="card-img-top"
+                    alt="Shopping Cart">
+                <div class="card-body">
+                    <h5 class="card-title">$5.99
+                    </h5>
+                    <p class="card-text">38-400 Black Flip & Sift Spice Cap with Induction Seal Liner - Bag of 25
+                    </p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="shop-now-button"> <a
+                                href="product-cap7.html">Shop Now</a> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card card-hover card-animation">
+                <img src="assets-b/Caps-n-enclosures/cap-8/img-2.jpg" class="card-img-top"
+                    alt="Shopping Cart">
+                <div class="card-body">
+                    <h5 class="card-title">$2.99
+                    </h5>
+                    <p class="card-text">38MM White PANO Lip & Plug Cap with Tamper Evident Ring - Bag of 25
+                    </p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="shop-now-button"> <a
+                                href="product-cap8.html">Shop Now</a> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+             integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+             crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+              AOS.init();
+            </script>
+      <!-- Sitemap and Footer Start -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Polysite specializes in providing premium plastic bottles in all sizes for diverse needs. We focus on
+                    quality, durability, and eco-friendly materials to reduce environmental impact. Your trusted choice
+                    for sustainable packaging solutions.</p>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div id="contact-us" class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="https://mail.google.com/mail/?view=cm&to=PolySitepk@gmail.com"
+                        target="_blank">PolySitepk@gmail.com</a></p>
+                <p>Phone: <a href="javascript:void(0)" onclick="copyPhoneNumber()" class="copy-tooltip">+92
+                        3317021329<span class="tooltip">Copied!</span></a></p>
+                <p>Address: Karachi, Pakistan</p>
+            </div>
+
+            <!-- Sitemap Section -->
+            <div class="footer-sitemap">
+                <div class="footer-sitemap-grid">
+                    <div class="footer-sitemap-column1">
+                        <h4>Polysite</h4>
+
+                    </div>
+                    <div class="footer-sitemap-column">
+                        <h4>Home</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-sitemap-column">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-sitemap-column">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="category.html">All Products</a></li>
+                            <li><a href="cat-bottles.html">Bottles</a></li>
+                            <li><a href="cat-storage.html">Storage Bottles & Gallons</a></li>
+                            <li><a href="cat-caps.html">Caps & Closures</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-sitemap-column">
+                        <h4>Shop Now</h4>
+                        <ul>
+                            <li><a href="category.html">Shop Now</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/profile.php?id=61570043575715" target="_blank"
+                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/kashanhyder_0620/" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/aftab-akram-4a6565324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for copying phone number -->
+    <script>
+        function copyPhoneNumber() {
+            const phoneNumber = "+92 3317021329";
+            navigator.clipboard.writeText(phoneNumber).then(function () {
+                const tooltip = document.querySelector('.tooltip');
+                tooltip.style.visibility = 'visible';
+                setTimeout(function () {
+                    tooltip.style.visibility = 'hidden';
+                }, 2000);
+            });
+        }
+    </script>
+
+    <!-- Footer End -->      
+</body>
+
+</html>
