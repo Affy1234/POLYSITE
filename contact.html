@@ -9,16 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
+    <link rel="icon" href="assets-c/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- Navbar start -->
 <nav class="navbar">
     <div class="logo">Poly<span>Site</span></div>
     <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="category.html">Shop Now</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
         <li><a href="FAQ queiries.html">Queries</a></li>
     </ul>
 
@@ -107,8 +110,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 
 body {
     background-color: #f7f7f7;
@@ -212,248 +216,7 @@ body {
     border-radius: 8px;
 }
 
-/* Footer */
-/* General Footer and Site Styling */
-.footer {
-    background-color: #222;
-    color: #fff;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-}
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px; 
-    max-width: 11200px;
-    margin: 0 auto;
-}
-
-.footer-about{
-    margin-left: 10px;
-}
-
-.footer-contact {
-    flex: 1 1 300px;
-    margin-right: 30px;
-margin-top: 5px;
-}
-
-
-.footer-contact,
-.footer-social {
-    flex: 1 1 300px;
-    margin-right: 30px;
-
-}
-
-/* Section Headings */
-.footer h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #64bbdd;
-}
-
-/* Footer Links and Text */
-.footer p, .footer a {
-    font-size: 1rem;
-    color: #ccc;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.footer-contact a {
-    color: #ffffff;
-}
-
-.footer-contact a:hover {
-    color: #76c5fa;
-}
-
-/* Social Media Icons */
-.footer-social ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-}
-
-.footer-social li {
-    margin: 0;
-}
-
-.footer-social a {
-    display: inline-block;
-    background-color: #444;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    color: #fff;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-}
-
-.footer-social a:hover {
-    background-color: #070607;
-}
-
-/* Footer Bottom */
-.footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    border-top: 1px solid #444;
-    padding-top: 15px;
-    font-size: 0.9rem;
-    color: #aaa;
-}
-
-/* Tooltip for Copy Phone Number */
-.copy-tooltip {
-    position: relative;
-    cursor: pointer;
-}
-
-.tooltip {
-    visibility: hidden;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 4px;
-    padding: 4px 8px;
-    position: absolute;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-    font-size: 12px;
-    white-space: nowrap;
-}
-
-.tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-.copy-tooltip.active .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
-
-/* Sitemap Container */
-.sitemap-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
-}
-
-/* Heading for Sitemap */
-.sitemap-container h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #64bbdd; 
-    font-weight: 700;
-    font-size: 2.5em;
-}
-
-/* Grid Layout for Sitemap */
-.sitemap-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Individual Sitemap Column */
-.sitemap-column {
-    background: #f9f9f9;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-/* Hover Effect for Sitemap Columns */
-.sitemap-column:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Title of Each Sitemap Column */
-.sitemap-column h2 {
-    color: #64bbdd;  
-    margin-bottom: 15px;
-    font-size: 1.6em;
-    font-weight: 600;
-}
-
-/* List Styling Inside Sitemap Columns */
-.sitemap-column ul {
-    list-style-type: none;
-}
-
-/* List Item Styling */
-.sitemap-column ul li {
-    margin: 12px 0;
-    font-size: 1.1em;
-    color: #555;
-}
-
-
-.footer-sitemap{
-    margin-right: 250px;
-}
-.footer-sitemap-column1 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #64bbdd;
-}
-
-/* Adjustments on Smaller Screens */
-@media (max-width: 1024px) {
-    .sitemap-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-    .sitemap-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-}
-
-@media (max-width: 480px) {
-    .sitemap-container {
-        padding: 20px;
-    }
-
-    .sitemap-container h1 {
-        font-size: 2em;
-    }
-
-    .sitemap-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/*footer end*/
 </style>
 <script>
     function validateForm() {
@@ -467,84 +230,146 @@ margin-top: 5px;
         return false; // Prevent form submission
     }
 
-    // Optional: You can add more validation here (e.g., email format, etc.)
-
+   
     alert('Your message has been sent!');
     return true; // Allow form submission
 }
 
 </script>
-<!-- Sitemap and Footer Start -->
-<footer class="footer">
-    <div class="footer-container">
-        <!-- About Section -->
-        <div class="footer-about">
-            <h3>About Us</h3>
-            <p>Polysite specializes in providing premium plastic bottles in all sizes for diverse needs. We focus on quality, durability, and eco-friendly materials to reduce environmental impact. Your trusted choice for sustainable packaging solutions.</p>
-        </div>
+<!-- footer start -->
 
-        <!-- Contact Us Section -->
-        <div id="contact-us" class="footer-contact">
-            <h3>Contact Us</h3>
-            <p>Email: <a href="https://mail.google.com/mail/?view=cm&to=Groccerystorepk@gmail.com" target="_blank">PolySitepk@gmail.com</a></p>
-            <p>Phone: <a href="javascript:void(0)" onclick="copyPhoneNumber()" class="copy-tooltip">+92 3317021329<span class="tooltip">Copied!</span></a></p>
-            <p>Address: Karachi, Pakistan</p>
-        </div>
+  <div  class="container-fluid">
 
-        <!-- Sitemap Section -->    
-        <div class="footer-sitemap">
-            <div class="footer-sitemap-grid">
-                <div class="footer-sitemap-column1">
-                    <h4>Polysite</h4>
-                    
-                </div>
-                <div class="footer-sitemap-column">
-                    <h4>Home</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                    </ul>
-                </div>
-                <div class="footer-sitemap-column">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-sitemap-column">
-                    <h4>Categories</h4>
-                    <ul>
-                        <li><a href="bottles.html">Bottles</a></li>
-                        <li><a href="caps.html">Caps & Closures</a></li>
-                        <li><a href="honey-bottles.html">Honey Bottles</a></li>
-                        <li><a href="plastic-containers.html">Plastic Containers</a></li>
-                    </ul>
-                </div>
-                <div class="footer-sitemap-column">
-                    <h4>Shop Now</h4>
-                    <ul>
-                        <li><a href="shop-now.html">Shop Now</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-        <!-- Social Media Links -->
-        <div class="footer-social">
-            <h3>Follow Us</h3>
-            <ul class="social-links">
-                <li><a href="https://www.facebook.com/profile.php?id=61570043575715" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/kashanhyder_0620/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
+    <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331"
+          >
+ 
+    <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: #a3d5ff"
+             >
+    
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+ 
+
+    
+      <div id="social" >
+        <a href="https://www.facebook.com/" class="text-dark me-4" style="text-decoration: none;">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/" class="text-dark me-4" style="text-decoration: none;">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.whatsapp.com/" class="text-dark me-4" style="text-decoration: none;">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="text-dark me-4" style="text-decoration: none;">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/" class="text-dark me-4" style="text-decoration: none;">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/" class="text-dark me-4" style="text-decoration: none;">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+   
+    </section>
+    
+
+   
+    <section >
+      <div class="container text-center text-md-start mt-5">
+      
+        <div class="row mt-3">
+        
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+         
+            <h5 class="text-uppercase fw-bold">POLYSITE</h5>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #a3d5ff; height: 2px"
+                />
+            <p>
+              Polysite is a company established in 2009 with the sole purpose of keeping the earth clean and selling recyclable bottles.From then ,we have been serving people accross the globe by providing them excellent quality plastic bottles and caps.
+            </p>
+          </div>
+        
+
+       
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #a3d5ff; height: 2px"
+                />
+            <p>
+              <a href="cat-bottles.html" class="text-white">Bottles</a>
+            </p>
+            <p>
+              <a href="cat-storage.html" class="text-white">Storage Jars</a>
+            </p>
+            <p>
+              <a href="cat-caps.html" class="text-white">Caps & Closures</a>
+            </p>
+          </div>
+       
+
+       
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #a3d5ff; height: 2px"
+                />
+            <p>
+              <a href="index.html" class="text-white">Home</a>
+            </p>
+            <p>
+              <a href="FAQ queries.html" class="text-white">FAQ's</a>
+            </p>
+            <p>
+              <a href="contact.html" class="text-white" >Contact us</a>
+            </p>
+          </div>
+      
+       
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+         
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #a3d5ff; height: 2px"
+                />
+            <p><i class="bi bi-geo-alt mr-3"></i> Karachi,Sindh,PK</p>
+            <p><i class="bi bi-envelope mr-3"></i> Polysite@gmail.com</p>
+            <p><i class="bi bi-phone mr-3"></i> + 92 334 567 88</p>
+          </div>
+      
         </div>
+      
+      </div>
+    </section>
+   
+
+   
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2025 Copyright:
+      <a class="text-white " href="index.html" style="text-decoration: none;"
+         >POLYSITE.com</a>
     </div>
+  
+  </footer>
+ 
 
-    <!-- Bottom Bar -->
-    <div class="footer-bottom">
-        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
-    </div>
-</footer>
-
-
-
-<!-- Footer End -->
+  </div>
+  <!-- End of footer -->

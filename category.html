@@ -15,91 +15,9 @@
         <link rel="stylesheet" href="category.css">
         <link rel="stylesheet" href="script.js">
         <link rel="stylesheet" href="login.html">
-        <link rel="stylesheet" href="sitemap.css">   
-    <style>
-
-        body{
-font-family: 'Poppins', sans-serif;
-
-background-color: #f9f9f9;
-}
-
-        .shop-now-button a {
-            text-decoration: none;
-            color: #ffffff;
-        }
-
-        .row {
-            gap: 1rem;
-        }
-
-        .cat-name {
-            text-align: center;
-            color: #0e6de9;
-            text-shadow:2px 2px 4px #0e6de9 ;
-        }
-
-        .card-hover {
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .card-hover:hover {
-            transform: scale(1.05);
-            background-color: #ffffff;
-            
-        }
-
-        .card-animation {
-            animation: card-load 0.5s ease-in-out;
-        }
-
-        @keyframes card-load {
-            from {
-                transform: scale(0);
-            }
-
-            to {
-                transform: scale(1);
-            }
-        }
-
-        .shop-now-button {
-            border-radius: 10px;
-            padding: 10px 20px;
-            background-color: #0e99e9;
-            color: #ffffff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            position: absolute;
-            justify-self: center;
-            top: 150px;
-        }
-
-        .shop-now-button:hover {
-            background-color: #0e6de9;
-            transform: translateY(-2px);
-            color: #ffffff;
-        }
-        .card{
-            height: 410px;
-            border-radius: 10px;
-            background-color: #f9f9f9;
-            border: 1px solid lightgray;
-        
-        }
-        .card .card-body{
-            position: relative;
-        }
-        .card-title{
-            color: green;
-        }
-        #cat-drop{
-            
-            margin-left: 80%;
-        }
-        
-    </style>
+        <link rel="stylesheet" href="sitemap.css"> 
+        <link rel="icon" href="assets-c/icon.png">  
+    
 </head>
 
 <body>
@@ -107,8 +25,8 @@ background-color: #f9f9f9;
      <nav class="navbar">
         <div class="logo">Poly<span>Site</span></div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="category.html">Shop Now</a></li>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="category.html" class="active">Shop Now</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="FAQ queiries.html">Queries</a></li>
         </ul>
@@ -134,11 +52,12 @@ background-color: #f9f9f9;
     <!-- category dropdown -->
      <div class="dropdown mt-5" id="cat-drop">
         <button
-          class="btn btn-outline-primary dropdown-toggle"
+          class="btn btn-outline-dark dropdown-toggle"
           type="button"
           id="dropdownMenuButton"
           data-bs-toggle="dropdown"
           aria-expanded="false"
+          style="border-radius: 10px;"
         >
         <i class="bi bi-funnel"></i>  Categories
         </button>
@@ -155,21 +74,21 @@ background-color: #f9f9f9;
     <div class="container mt-3">
         <div class="row">
             <div>
-                <h1 class="cat-name display-2" data-aos="zoom-in-up">SQUARE BOTTLES</h1>
+                <h1 class="cat-name display-2" data-aos="zoom-in-up" id="square-bottle">SQUARE BOTTLES</h1>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">
                 <div class="card card-hover card-animation">
                     <img src="assets/Square-bots/sq-bot-1/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
                         <h5 class="card-title">$79.99</h5>
-                        <p class="card-text">Clear PET Square Bottle w/ 25% PCR Material | Tamper Evident IPEC Neck | 30.2g</p>
+                        <p class="card-text">Clear PET Square Bottle w/ 25% PCR Material | Tamper Evident IPEC Neck </p>
                         <div class="d-grid gap-2">
                             <button type="button" class="shop-now-button"> <a href="product.html">Shop Now</a> </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">
                 <div class="card card-hover card-animation">
                     <img src="assets/Square-bots/sq-bot-2/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -184,7 +103,7 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">
                 <div class="card card-hover card-animation">
                     <img src="assets/Square-bots/sq-bot-3/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -199,7 +118,7 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">
                 <div class="card card-hover card-animation">
                     <img src="assets/Square-bots/sq-bot-4/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -214,13 +133,13 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">
                 <div class="card card-hover card-animation">
                     <img src="assets/Square-bots/sq-bot-5/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
                         <h5 class="card-title">$90.99
                         </h5>
-                        <p class="card-text">7.5 fl oz Clear Square PET Spice Bottle w/ Sloped Sidewalls - 38-400 neck
+                        <p class="card-text">7.5 fl oz Clear Square PET Spice Bottle w/ Sloped Sidewalls 
                         </p>
                         <div class="d-grid gap-2">
                             <button type="button" class="shop-now-button"> <a href="product5.html">Shop Now</a>
@@ -229,7 +148,7 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">
                 <div class="card card-hover card-animation">
                     <img src="assets/Square-bots/sq-bot-6/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -253,8 +172,8 @@ background-color: #f9f9f9;
             <div>
                 <h1 class="cat-name display-2" data-aos="zoom-in-up">ROUND BOTTLES</h1>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                <div class="card card-hover card-animation">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">               
+                 <div class="card card-hover card-animation">
                     <img src="assets/Round-bots/ro-bot-1/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
                         <h5 class="card-title">$49.99
@@ -268,7 +187,7 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                
                 <div class="card card-hover card-animation">
                     <img src="assets/Round-bots/ro-bot-2/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -283,13 +202,13 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                
                 <div class="card card-hover card-animation">
                     <img src="assets/Round-bots/ro-bot-3/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
                         <h5 class="card-title">$142.99
                         </h5>
-                        <p class="card-text">12 oz (8 fl oz) Natural LDPE Squeezable Sauce Bottle - 38-400 neck
+                        <p class="card-text">12 oz (8 fl oz) Natural LDPE Squeezable Sauce Bottle 
                         </p>
                         <div class="d-grid gap-2">
                             <button type="button" class="shop-now-button"> <a href="product-ro3.html">Shop Now</a>
@@ -298,7 +217,7 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                
                 <div class="card card-hover card-animation">
                     <img src="assets/Round-bots/ro-bot-4/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -313,7 +232,7 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                
                 <div class="card card-hover card-animation">
                     <img src="assets/Round-bots/ro-bot-5/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -328,7 +247,7 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                
                 <div class="card card-hover card-animation">
                     <img src="assets/Round-bots/ro-bot-6/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -352,7 +271,7 @@ background-color: #f9f9f9;
             <div>
                 <h1 class="cat-name display-2" data-aos="zoom-in-up">OVAL BOTTLES</h1>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                
                 <div class="card card-hover card-animation">
                     <img src="assets/Oval-bots/ov-bot-1/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -367,7 +286,7 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                
                 <div class="card card-hover card-animation">
                     <img src="assets/Oval-bots/ov-bot-2/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -382,7 +301,7 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                
                 <div class="card card-hover card-animation">
                     <img src="assets/Oval-bots/ov-bot-3/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -407,7 +326,7 @@ background-color: #f9f9f9;
                 <h1 class="cat-name display-2" data-aos="zoom-in-up">MINI LIQUOR</h1>
             </div>
 
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                
                 <div class="card card-hover card-animation">
                     <img src="assets/Mini-liquor/liq-bot-1/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -422,7 +341,7 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                
                 <div class="card card-hover card-animation">
                     <img src="assets/Mini-liquor/liq-bot-2/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -437,7 +356,7 @@ background-color: #f9f9f9;
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                
                 <div class="card card-hover card-animation">
                     <img src="assets/Mini-liquor/liq-bot-3/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                     <div class="card-body">
@@ -458,14 +377,14 @@ background-color: #f9f9f9;
                     <div>
                         <h1 class="cat-name display-2" data-aos="zoom-in-up">STORAGE BOTTLES AND GALLONS</h1>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                    <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                        
                         <div class="card card-hover card-animation">
                             <img src="assets-b/Dry-prod-bots/dry-bot-1/img-1.jpg" class="card-img-top"
                                 alt="Shopping Cart">
                             <div class="card-body">
                                 <h5 class="card-title">$90.99
                                 </h5>
-                                <p class="card-text">7.5 fl oz Clear Square PET Spice Bottle w/ Sloped Sidewalls - 38-400 neck
+                                <p class="card-text">7.5 fl oz Clear Square PET Spice Bottle w/ Sloped Sidewalls 
                                 </p>
                                 <div class="d-grid gap-2">
                                     <button type="button" class="shop-now-button"> <a href="product-dry.html">Shop
@@ -474,7 +393,7 @@ background-color: #f9f9f9;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                    <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                        
                         <div class="card card-hover card-animation">
                             <img src="assets-b/Dry-prod-bots/dry-bot-2/img-1.jpg" class="card-img-top"
                                 alt="Shopping Cart">
@@ -490,7 +409,7 @@ background-color: #f9f9f9;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                    <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                        
                         <div class="card card-hover card-animation">
                             <img src="assets-b/Dry-prod-bots/dry-bot-3/img-1.jpg" class="card-img-top"
                                 alt="Shopping Cart">
@@ -506,7 +425,7 @@ background-color: #f9f9f9;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                    <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                        
                         <div class="card card-hover card-animation">
                             <img src="assets-b/Dry-prod-bots/dry-bot-4/img-1.jpg" class="card-img-top"
                                 alt="Shopping Cart">
@@ -522,9 +441,9 @@ background-color: #f9f9f9;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                    <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                        
                         <div class="card card-hover card-animation">
-                            <img src="assets-b/Square-bots/sq-bot-7/img-1.jpg" class="card-img-top" alt="Shopping Cart">
+                            <img src="assets/Square-bots/sq-bot-7/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                             <div class="card-body">
                                 <h5 class="card-title">$67.99
                                 </h5>
@@ -537,9 +456,9 @@ background-color: #f9f9f9;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                    <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                        
                         <div class="card card-hover card-animation">
-                            <img src="assets-b/Square-bots/sq-bot-8/img-1.jpg" class="card-img-top" alt="Shopping Cart">
+                            <img src="assets/Square-bots/sq-bot-8/img-1.jpg" class="card-img-top" alt="Shopping Cart">
                             <div class="card-body">
                                 <h5 class="card-title">$35.99
                                 </h5>
@@ -559,7 +478,7 @@ background-color: #f9f9f9;
                                 <h1 class="cat-name display-2" data-aos="zoom-in-up">CAPS & ENCLOSURES</h1>
                             </div>
 
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                                
                                 <div class="card card-hover card-animation">
                                     <img src="assets-b/Caps-n-enclosures/cap-1/img-1.jpg" class="card-img-top"
                                         alt="Shopping Cart">
@@ -575,14 +494,14 @@ background-color: #f9f9f9;
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                                
                                 <div class="card card-hover card-animation">
                                     <img src="assets-b/Caps-n-enclosures/cap-2/img-1.jpg" class="card-img-top"
                                         alt="Shopping Cart">
                                     <div class="card-body">
                                         <h5 class="card-title">$5.99
                                         </h5>
-                                        <p class="card-text">38-400 Flip Top Cap with Pressure Sensitive Liner - 7.62mm Round Orifice
+                                        <p class="card-text">38-400 Flip Top Cap with Pressure Sensitive Liner - 7.62mm Round
                                         </p>
                                         <div class="d-grid gap-2">
                                             <button type="button" class="shop-now-button"> <a
@@ -591,7 +510,7 @@ background-color: #f9f9f9;
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                                
                                 <div class="card card-hover card-animation">
                                     <img src="assets-b/Caps-n-enclosures/cap-3/img-1.jpg" class="card-img-top"
                                         alt="Shopping Cart">
@@ -607,7 +526,7 @@ background-color: #f9f9f9;
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                                
                                 <div class="card card-hover card-animation">
                                     <img src="assets-b/Caps-n-enclosures/cap-4/img-1.jpg" class="card-img-top"
                                         alt="Shopping Cart">
@@ -623,7 +542,7 @@ background-color: #f9f9f9;
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                                
                                 <div class="card card-hover card-animation">
                                     <img src="assets-b/Caps-n-enclosures/cap-5/img-1.jpg" class="card-img-top"
                                         alt="Shopping Cart">
@@ -639,14 +558,14 @@ background-color: #f9f9f9;
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                                
                                 <div class="card card-hover card-animation">
                                     <img src="assets-b/Caps-n-enclosures/cap-6/img-1.jpg" class="card-img-top"
                                         alt="Shopping Cart">
                                     <div class="card-body">
                                         <h5 class="card-title">$4.99
                                         </h5>
-                                        <p class="card-text">38-400 Black Flip & Sift Spice Cap with Pressure Sensitive Liner - Bag of 25
+                                        <p class="card-text">38-400 Black Flip & Sift Spice Cap with Pressure Sensitive Liner 
                                         </p>
                                         <div class="d-grid gap-2">
                                             <button type="button" class="shop-now-button"> <a
@@ -655,7 +574,7 @@ background-color: #f9f9f9;
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                                
                                 <div class="card card-hover card-animation">
                                     <img src="assets-b/Caps-n-enclosures/cap-7/img-2.jpg" class="card-img-top"
                                         alt="Shopping Cart">
@@ -671,7 +590,7 @@ background-color: #f9f9f9;
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
+                            <div class="col-xl-3 col-lg-5 col-md-7 col-sm-9 col-12 mb-4">                                
                                 <div class="card card-hover card-animation">
                                     <img src="assets-b/Caps-n-enclosures/cap-8/img-2.jpg" class="card-img-top"
                                         alt="Shopping Cart">
@@ -697,98 +616,143 @@ background-color: #f9f9f9;
                             AOS.init();
                           </script>
 
-        <!-- Sitemap and Footer Start -->
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- About Section -->
-            <div class="footer-about">
-                <h3>About Us</h3>
-                <p>Polysite specializes in providing premium plastic bottles in all sizes for diverse needs. We focus on
-                    quality, durability, and eco-friendly materials to reduce environmental impact. Your trusted choice
-                    for sustainable packaging solutions.</p>
-            </div>
+        <!-- footer start -->
 
-            <!-- Contact Us Section -->
-            <div id="contact-us" class="footer-contact">
-                <h3>Contact Us</h3>
-                <p>Email: <a href="https://mail.google.com/mail/?view=cm&to=PolySitepk@gmail.com"
-                        target="_blank">PolySitepk@gmail.com</a></p>
-                <p>Phone: <a href="javascript:void(0)" onclick="copyPhoneNumber()" class="copy-tooltip">+92
-                        3317021329<span class="tooltip">Copied!</span></a></p>
-                <p>Address: Karachi, Pakistan</p>
-            </div>
+  <div  class="container-fluid">
 
-            <!-- Sitemap Section -->
-            <div class="footer-sitemap">
-                <div class="footer-sitemap-grid">
-                    <div class="footer-sitemap-column1">
-                        <h4>Polysite</h4>
 
-                    </div>
-                    <div class="footer-sitemap-column">
-                        <h4>Home</h4>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-sitemap-column">
-                        <h4>Contact Us</h4>
-                        <ul>
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-sitemap-column">
-                        <h4>Categories</h4>
-                        <ul>
-                            <li><a href="category.html">All Products</a></li>
-                            <li><a href="cat-bottles.html">Bottles</a></li>
-                            <li><a href="cat-storage.html">Storage Bottles & Gallons</a></li>
-                            <li><a href="cat-caps.html">Caps & Closures</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-sitemap-column">
-                        <h4>Shop Now</h4>
-                        <ul>
-                            <li><a href="category.html">Shop Now</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331"
+          >
+ 
+    <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: #a3d5ff"
+             >
+    
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+ 
 
-            <!-- Social Media Links -->
-            <div class="footer-social">
-                <h3>Follow Us</h3>
-                <ul class="social-links">
-                    <li><a href="https://www.facebook.com/profile.php?id=61570043575715" target="_blank"
-                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/kashanhyder_0620/" target="_blank" aria-label="Instagram"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/aftab-akram-4a6565324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-                </ul>
-            </div>
+    
+      <div id="social" >
+        <a href="https://www.facebook.com/" class="text-dark me-4" style="text-decoration: none;">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/" class="text-dark me-4" style="text-decoration: none;">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.whatsapp.com/" class="text-dark me-4" style="text-decoration: none;">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="text-dark me-4" style="text-decoration: none;">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/" class="text-dark me-4" style="text-decoration: none;">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/" class="text-dark me-4" style="text-decoration: none;">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+   
+    </section>
+    
+
+   
+    <section >
+      <div class="container text-center text-md-start mt-5">
+      
+        <div class="row mt-3">
+        
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+         
+            <h5 class="text-uppercase fw-bold">POLYSITE</h5>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #a3d5ff; height: 2px"
+                />
+            <p>
+              Polysite is a company established in 2009 with the sole purpose of keeping the earth clean and selling recyclable bottles.From then ,we have been serving people accross the globe by providing them excellent quality plastic bottles and caps.
+            </p>
+          </div>
+        
+
+       
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #a3d5ff; height: 2px"
+                />
+            <p>
+              <a href="cat-bottles.html" class="text-white">Bottles</a>
+            </p>
+            <p>
+              <a href="cat-storage.html" class="text-white">Storage Jars</a>
+            </p>
+            <p>
+              <a href="cat-caps.html" class="text-white">Caps & Closures</a>
+            </p>
+          </div>
+       
+
+       
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #a3d5ff; height: 2px"
+                />
+            <p>
+              <a href="index.html" class="text-white">Home</a>
+            </p>
+            <p>
+              <a href="FAQ queries.html" class="text-white">FAQ's</a>
+            </p>
+            <p>
+              <a href="contact.html" class="text-white" >Contact us</a>
+            </p>
+          </div>
+      
+       
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+         
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #a3d5ff; height: 2px"
+                />
+            <p><i class="bi bi-geo-alt mr-3"></i> Karachi,Sindh,PK</p>
+            <p><i class="bi bi-envelope mr-3"></i> Polysite@gmail.com</p>
+            <p><i class="bi bi-phone mr-3"></i> + 92 334 567 88</p>
+          </div>
+      
         </div>
+      
+      </div>
+    </section>
+   
 
-        <!-- Bottom Bar -->
-        <div class="footer-bottom">
-            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
-        </div>
-    </footer>
+   
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2025 Copyright:
+      <a class="text-white " href="index.html" style="text-decoration: none;"
+         >POLYSITE.com</a>
+    </div>
+  
+  </footer>
+ 
 
-    <!-- JavaScript for copying phone number -->
-    <script>
-        function copyPhoneNumber() {
-            const phoneNumber = "+92 3317021329";
-            navigator.clipboard.writeText(phoneNumber).then(function () {
-                const tooltip = document.querySelector('.tooltip');
-                tooltip.style.visibility = 'visible';
-                setTimeout(function () {
-                    tooltip.style.visibility = 'hidden';
-                }, 2000);
-            });
-        }
-    </script>
-
-    <!-- Footer End -->                  
+  </div>
+  <!-- End of footer -->                  
 </body>
 
 </html>
